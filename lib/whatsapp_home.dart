@@ -5,7 +5,7 @@ import 'package:whatsapp/pages/chat_screen.dart';
 import 'package:whatsapp/pages/create_chat_screen.dart';
 import 'package:whatsapp/pages/new_group_screen.dart';
 import 'package:whatsapp/pages/setting_screen.dart';
-import 'package:whatsapp/pages/status_screen.dart';
+import 'package:whatsapp/pages/products_screen.dart';
 
 class WhatsAppHome extends StatefulWidget {
   @override
@@ -83,7 +83,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
             text: "چت ها",
           ),
           Tab(
-            text: "وضعیت",
+            text: "محصولات",
           ),
           Tab(
             text: "تماس ها",
@@ -132,7 +132,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
                 children: [
                   CameraScreen(),
                   ChatScreen(),
-                  StatusScreen(),
+                  ProductsScreen(),
                   CallScreen(),
                 ],
               )

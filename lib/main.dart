@@ -22,12 +22,12 @@ class MyApp extends StatelessWidget {
       ),
 
       //صفحه ای که در ابتدای برنامه باز میشود
-      initialRoute: '/splash_screen',
+      // initialRoute: '/',
 
       // این قسمت مربوط به navigation است در این جا صفحات ای که میریم رو تعریف میکنیم
       routes: {
         // به جای استفاده از home میتوانیم از این route استفاده کنیم
-        '/': (context) => Directionality(
+        '/home': (context) => Directionality(
               textDirection: TextDirection.rtl,
               child: WhatsAppHome(),
             ),
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
               textDirection: TextDirection.rtl,
               child: LoginScreen(),
             ),
-        '/splash_screen': (context) => Directionality(
+        '/': (context) => Directionality(
               textDirection: TextDirection.rtl,
               child: SplashScreen(),
             ),
